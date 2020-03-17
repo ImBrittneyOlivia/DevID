@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <h1>Let's create an ID card!</h1>
+    <p>
+      Have fun creating your personal ID card. This project was built with HTML,
+      CSS and JavaScript.<br />
+      After filling out the form, press "Generate ID!" to see your very own ID
+      generate below. Have Fun!
+    </p>
+
+    <form>
+      <input type="text" id="firstName" placeholder="First Name" /><br />
+      <input type="text" id="lastName" placeholder="Last Name" /><br />
+      <input type="text" id="age" placeholder="Age" /><br />
+      <input type="text" id="phoneNumber" placeholder="Phone Number" /><br />
+      <input type="text" id="address" placeholder="Address" /><br />
+      <input type="radio" name="gender" value="Male" onclick="check_value(1)" />
+      Male
+      <input
+        type="radio"
+        name="gender"
+        value="Female"
+        onclick="check_value(2)"
+      />
+      Female
+      <button type="button" onclick="idCard()">Generate ID!</button>
+    </form>
+
+    <div id="idCard">
+      <div id="id-img">
+        <div id="postImage"></div>
+      </div>
+
+      <div id="idInfo">
+        <p id="postFullName"></p>
+        <hr />
+
+        <p id="postAge"></p>
+
+        <p id="postPhoneNumber"></p>
+
+        <p id="postAddress"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

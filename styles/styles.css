@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url(https://cdn8.dissolve.com/p/17A035_927/17A035_927_0004_600.jpg); */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 900px;
+  justify-content: center;
+}
+
+body > p {
+  margin-bottom: 50px;
+}
+
+form {
+  font-size: 18px;
+  width: 30%;
+  text-align: center;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid rgb(143, 141, 141);
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+button {
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 2%;
+  margin: 20px;
+}
+
+button:hover {
+  background: rgb(69, 174, 192);
+  color: white;
+  box-shadow: 1px 2px 13px black;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+img {
+  height: 90px;
+  width: 90px;
+}
+
+#idCard {
+  background: rgb(255, 255, 255);
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 3px 3px 13px grey;
+  display: flex;
+  height: 15em;
+  justify-content: space-evenly;
+  width: 25em;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+#idInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+#postFullName {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background: rgb(58, 114, 133);
+    text-align: center;
+  }
+}
